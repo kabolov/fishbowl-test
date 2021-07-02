@@ -14,7 +14,6 @@ const testQueries = [
 
 const mongoQueryToSql = (rawString: string) => {
   const parsedQuery = mongoQueryParser(rawString);
-  //   console.log(parsedQuery);
   sqlBuilder(parsedQuery);
 };
 
